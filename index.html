@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Updated for SEO -->
+    <!-- SEO Meta Tags for better search engine indexing -->
     <title>The Meticulous Tester | SQA & Test Automation Portfolio</title>
     <meta name="description" content="Official portfolio of a skilled Software Quality Assurance engineer. Specializing in manual and automated testing, test case design, and ensuring product quality.">
     <meta name="keywords" content="SQA, Software Quality Assurance, Quality Assurance, manual testing, test automation, Selenium, JIRA, Agile, Postman, software tester, Khan Muhammad Raza, portfolio">
@@ -13,10 +13,30 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- We'll use a library for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* Custom CSS to handle the sticky header and mobile menu transition */
+        body {
+            /* Adds padding to the top of the page to prevent content from hiding under the fixed header */
+            padding-top: 5rem;
+        }
+
+        /* Adds a smooth transition effect when the mobile menu opens and closes */
+        #mobile-menu {
+            transition: max-height 0.3s ease-in-out;
+            max-height: 0;
+            overflow: hidden;
+        }
+
+        /* Sets the maximum height to show the menu when it's active */
+        #mobile-menu.active {
+            max-height: 300px;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Header & Navigation -->
+    <!-- Header & Navigation with sticky positioning -->
     <header class="sticky top-0 z-50 bg-slate-900 text-white shadow-md">
         <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
             <!-- Logo / Title -->
@@ -25,7 +45,7 @@
                 The Meticulous Tester
             </a>
 
-            <!-- Desktop Menu -->
+            <!-- Desktop Menu (visible on medium and larger screens) -->
             <div class="hidden md:flex gap-6 text-sm">
                 <a href="#skills" class="hover:text-cyan-400">Skills</a>
                 <a href="#projects" class="hover:text-cyan-400">Projects</a>
@@ -34,13 +54,13 @@
                 <a href="#contact" class="hover:text-cyan-400">Contact</a>
             </div>
 
-            <!-- Mobile Menu Button -->
+            <!-- Mobile Menu Button (visible on small screens) -->
             <button id="menu-toggle" class="md:hidden text-2xl">
                 <i class="fas fa-bars"></i>
             </button>
         </nav>
 
-        <!-- Mobile Dropdown -->
+        <!-- Mobile Dropdown Menu -->
         <div id="mobile-menu" class="hidden flex-col bg-slate-800 text-white p-4 md:hidden">
             <a href="#skills" class="py-2 border-b border-slate-700 hover:text-cyan-400">Skills</a>
             <a href="#projects" class="py-2 border-b border-slate-700 hover:text-cyan-400">Projects</a>
@@ -50,8 +70,7 @@
         </div>
     </header>
 
-
-    <!-- Hero Section: The main banner to introduce the site -->
+    <!-- Hero Section -->
     <main class="container mx-auto p-6">
         <section id="hero" class="bg-gray-900 rounded-2xl shadow-xl overflow-hidden py-20 px-6 text-center text-white">
             <h1 class="text-5xl md:text-6xl font-extrabold mb-4">Mastering Quality Assurance</h1>
@@ -59,7 +78,7 @@
             <a href="#skills" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-300">Explore My Skills</a>
         </section>
 
-        <!-- My Skills Section: A place to showcase your technical abilities -->
+        <!-- My Skills Section -->
         <section id="skills" class="my-16">
             <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">My Skills</h2>
             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
@@ -113,7 +132,7 @@
             </div>
         </section>
 
-        <!-- Projects Section: A place to showcase your work -->
+        <!-- Projects Section -->
         <section id="projects" class="my-16">
             <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">My Projects</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
@@ -132,7 +151,7 @@
             </div>
         </section>
 
-        <!-- Insights Section: A place to showcase blog posts -->
+        <!-- Insights Section -->
         <section id="insights" class="my-16">
             <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">My Latest Insights</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
@@ -188,6 +207,60 @@
         <p>&copy; 2024 The Meticulous Tester. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- All JavaScript is now included here for a single-file solution -->
+    <script>
+        // JavaScript for the mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            // This is a more robust way to handle the toggle
+            // It also allows for the CSS transition
+            if (mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.remove('active');
+            } else {
+                mobileMenu.classList.add('active');
+            }
+        });
+
+        // JavaScript for the project "View Details" buttons
+        function showMessage(message) {
+            // Create the message box element
+            const messageBox = document.createElement('div');
+            messageBox.classList.add(
+                'fixed', 'top-1/2', 'left-1/2', '-translate-x-1/2', '-translate-y-1/2',
+                'bg-blue-600', 'text-white', 'p-4', 'rounded-lg', 'shadow-xl',
+                'text-center', 'z-[100]', 'opacity-0', 'transition-opacity', 'duration-500'
+            );
+            messageBox.textContent = message;
+            document.body.appendChild(messageBox);
+
+            // Fade in the message box
+            setTimeout(() => {
+                messageBox.style.opacity = '1';
+            }, 10);
+
+            // Fade out and remove the message box after 3 seconds
+            setTimeout(() => {
+                messageBox.style.opacity = '0';
+                setTimeout(() => {
+                    document.body.removeChild(messageBox);
+                }, 500);
+            }, 3000);
+        }
+
+        // Get all elements with the class 'view-details-btn'
+        const viewDetailsButtons = document.querySelectorAll('.view-details-btn');
+
+        // Loop through each button and add a click event listener
+        viewDetailsButtons.forEach(button => {
+            button.addEventListener('click', (event) => {
+                event.preventDefault();
+                const projectTitle = event.target.closest('.rounded-xl').querySelector('h3').textContent;
+                showMessage(`You've selected the project: "${projectTitle}".`);
+            });
+        });
+    </script>
 </body>
 </html>
