@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQA Authority</title>
+    <!-- We're using Tailwind CSS for responsive styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- We'll use a library for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="bg-gray-800 text-white p-6">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold">QualityForge</a>
+            <div class="space-x-4">
+                <a href="#" class="hover:text-gray-300">Home</a>
+                <a href="#skills" class="hover:text-gray-300">Skills</a>
+                <a href="#projects" class="hover:text-gray-300">Projects</a>
+                <a href="#insights" class="hover:text-gray-300">Insights</a>
+                <a href="#about" class="hover:text-gray-300">About</a>
+                <a href="#contact" class="hover:text-gray-300">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section: The main banner to introduce the site -->
+    <main class="container mx-auto p-6">
+        <section id="hero" class="bg-gray-900 rounded-2xl shadow-xl overflow-hidden py-20 px-6 text-center text-white">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-4">Mastering Quality Assurance</h1>
+            <p class="text-xl md:text-2xl font-light mb-8">Empowering your software with flawless performance through expert SQA and manual testing.</p>
+            <a href="#skills" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-300">Explore My Skills</a>
+        </section>
+
+        <!-- My Skills Section: A place to showcase your technical abilities -->
+        <section id="skills" class="my-16">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">My Skills</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+                <!-- Automation and general skills -->
+                <div class="flex items-center justify-center p-4 bg-gray-100 rounded-lg shadow-md">
+                    <span class="font-semibold text-gray-700">Selenium</span>
+                </div>
+                <div class="flex items-center justify-center p-4 bg-gray-100 rounded-lg shadow-md">
+                    <span class="font-semibold text-gray-700">Cypress</span>
+                </div>
+                <div class="flex items-center justify-center p-4 bg-gray-100 rounded-lg shadow-md">
+                    <span class="font-semibold text-gray-700">JIRA</span>
+                </div>
+                <div class="flex items-center justify-center p-4 bg-gray-100 rounded-lg shadow-md">
+                    <span class="font-semibold text-gray-700">Agile</span>
+                </div>
+                <div class="flex items-center justify-center p-4 bg-gray-100 rounded-lg shadow-md">
+                    <span class="font-semibold text-gray-700">Python</span>
+                </div>
+                <div class="flex items-center justify-center p-4 bg-gray-100 rounded-lg shadow-md">
+                    <span class="font-semibold text-gray-700">Postman (API Testing)</span>
+                </div>
+                <!-- Manual testing skills -->
+                <div class="flex items-center justify-center p-4 bg-gray-100 rounded-lg shadow-md">
+                    <span class="font-semibold text-gray-700">Test Case Design</span>
+                </div>
+                <div class="flex items-center justify-center p-4 bg-gray-100 rounded-lg shadow-md">
+                    <span class="font-semibold text-gray-700">Bug Reporting</span>
+                </div>
+                <div class="flex items-center justify-center p-4 bg-gray-100 rounded-lg shadow-md">
+                    <span class="font-semibold text-gray-700">Functional Testing</span>
+                </div>
+                <div class="flex items-center justify-center p-4 bg-gray-100 rounded-lg shadow-md">
+                    <span class="font-semibold text-gray-700">Regression Testing</span>
+                </div>
+                <div class="flex items-center justify-center p-4 bg-gray-100 rounded-lg shadow-md">
+                    <span class="font-semibold text-gray-700">Web/Mobile Testing</span>
+                </div>
+                <div class="flex items-center justify-center p-4 bg-gray-100 rounded-lg shadow-md">
+                    <span class="font-semibold text-gray-700">Database Fundamentals (SQL)</span>
+                </div>
+                <div class="flex items-center justify-center p-4 bg-gray-100 rounded-lg shadow-md">
+                    <span class="font-semibold text-gray-700">SDLC & STLC</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section: A place to showcase your work -->
+        <section id="projects" class="my-16">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <!-- Project Card 1: Sauce Demo Login Automation -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden p-8">
+                    <h3 class="text-2xl font-semibold mb-2 text-gray-800">Login Functionality Test Automation: Sauce Demo Site</h3>
+                    <p class="text-gray-600 mb-4">Developed an automated test suite to verify the login functionality of the Sauce Demo website. The tests cover both valid and invalid credentials to ensure robustness. This project demonstrates my ability to design and execute effective test cases, as well as my proficiency with automation tools.</p>
+                    <a href="https://github.com/khanmuhammadraza6/WebPortfolio1/tree/main" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition-all duration-300">View on GitHub</a>
+                </div>
+                <!-- Project Card 2: POM Google Search -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden p-8">
+                    <h3 class="text-2xl font-semibold mb-2 text-gray-800">Google Search Test Automation using Page Object Model (POM)</h3>
+                    <p class="text-gray-600 mb-4">Implemented the Page Object Model (POM) design pattern to automate Google's search functionality. This project showcases my ability to create scalable and maintainable test frameworks by separating test logic from page locators, making the code reusable and easy to update.</p>
+                    <a href="https://github.com/khanmuhammadraza6/POM-basic-implementation/tree/main" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition-all duration-300">View on GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Insights Section: A place to showcase blog posts -->
+        <section id="insights" class="my-16">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">My Latest Insights</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <!-- Blog Post Card 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden p-8">
+                    <h3 class="text-2xl font-semibold mb-2 text-gray-800">The Power of Page Object Model: A Guide to Clean Test Automation</h3>
+                    <p class="text-gray-600 mb-4">Discover the crucial role of the Page Object Model (POM) in building scalable and maintainable automation frameworks. Learn how avoiding this design pattern can lead to challenges and how it can be your key to writing cleaner, more efficient test code.</p>
+                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7363072373933117440/" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition-all duration-300">Read on LinkedIn</a>
+                </div>
+                <!-- Blog Post Card 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden p-8">
+                    <h3 class="text-2xl font-semibold mb-2 text-gray-800">Enhancing Test Automation with Listeners in Selenium</h3>
+                    <p class="text-gray-600 mb-4">Explore how Selenium listeners act as powerful event handlers, allowing you to monitor and customize test execution. Learn how they can be used for logging, taking screenshots on failure, and generating reports, making your test framework more robust and insightful.</p>
+                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7361260396940353537/" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition-all duration-300">Read on LinkedIn</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="my-16">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">About My Journey</h2>
+            <div class="bg-gray-100 rounded-xl shadow-lg p-8 md:p-12">
+                <p class="text-gray-700 text-lg leading-relaxed">
+                    My journey into Quality Assurance was sparked by a natural curiosity and a passion for problem-solving. I am driven by the satisfying challenge of uncovering a product’s hidden issues, ensuring every user interaction is seamless and reliable. My portfolio is a testament to this commitment, showcasing my hands-on experience in building robust test automation frameworks and implementing best practices like the Page Object Model. I am a dedicated and meticulous professional, eager to apply my skills to real-world projects and contribute to a team focused on delivering flawless software. My ultimate goal is to land a role where I can continue to learn, grow, and help build exceptional products.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="my-16">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Get In Touch</h2>
+            <div class="bg-gray-100 rounded-xl shadow-lg p-8 md:p-12 text-center">
+                <p class="text-gray-700 text-lg mb-6">I am currently seeking opportunities to join a dynamic team and contribute my skills in SQA. Feel free to connect with me!</p>
+                <div class="flex justify-center space-x-6">
+                    <a href="mailto:youremail@example.com" class="text-gray-700 hover:text-blue-600 transition-colors duration-300">
+                        <i class="fas fa-envelope fa-2x"></i>
+                    </a>
+                    <a href="https://github.com/khanmuhammadraza6" class="text-gray-700 hover:text-blue-600 transition-colors duration-300">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/khanmuhammadraza6" class="text-gray-700 hover:text-blue-600 transition-colors duration-300">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                </div>
+                <p class="mt-4 text-gray-600">You can also find my insights on LinkedIn.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center p-6 mt-16">
+        <p>&copy; 2024 QualityForge. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
