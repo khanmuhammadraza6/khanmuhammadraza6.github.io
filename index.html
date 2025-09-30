@@ -3,15 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- SEO Meta Tags for better search engine indexing -->
     <title>The Meticulous Tester | SQA & Test Automation Portfolio</title>
     <meta name="description" content="Official portfolio of a skilled Software Quality Assurance engineer. Specializing in manual and automated testing, test case design, and ensuring product quality.">
     <meta name="keywords" content="SQA, Software Quality Assurance, Quality Assurance, manual testing, test automation, Selenium, JIRA, Agile, Postman, software tester, Khan Muhammad Raza, portfolio">
     <meta name="author" content="Khan Muhammad Raza">
     
-    <!-- We're using Tailwind CSS for responsive styling -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- We'll use a library for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
@@ -29,16 +26,13 @@
 </head>
 <body>
 
-    <!-- Header & Navigation with sticky positioning -->
     <header class="sticky top-0 z-50 bg-slate-900 text-white shadow-md">
         <nav class="container mx-auto px-4 py-4 flex flex-wrap items-center justify-between">
-            <!-- Logo / Title -->
             <a href="#" class="flex items-center gap-2 font-extrabold text-xl">
                 <span class="bg-gradient-to-tr from-cyan-400 to-violet-500 text-slate-900 px-3 py-1 rounded-lg">QT</span>
                 The Meticulous Tester
             </a>
 
-            <!-- Desktop Menu (visible on medium and larger screens) -->
             <div class="hidden md:flex gap-6 text-sm">
                 <a href="#skills" class="hover:text-cyan-400">Skills</a>
                 <a href="#projects" class="hover:text-cyan-400">Projects</a>
@@ -47,13 +41,11 @@
                 <a href="#contact" class="hover:text-cyan-400">Contact</a>
             </div>
 
-            <!-- Mobile Menu Button (visible on small screens) -->
             <button id="menu-toggle" class="md:hidden text-2xl">
                 <i class="fas fa-bars"></i>
             </button>
         </nav>
 
-        <!-- Mobile Dropdown Menu -->
         <div id="mobile-menu" class="hidden md:hidden flex-col bg-slate-800 text-white p-4">
             <a href="#skills" class="py-2 border-b border-slate-700 hover:text-cyan-400">Skills</a>
             <a href="#projects" class="py-2 border-b border-slate-700 hover:text-cyan-400">Projects</a>
@@ -63,79 +55,101 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
     <main class="container mx-auto p-6 pt-20">
-        <section id="hero" class="bg-gray-900 rounded-2xl shadow-xl overflow-hidden py-20 px-6 text-center text-white">
-            <h1 class="text-5xl md:text-6xl font-extrabold mb-4">Mastering Quality Assurance</h1>
-            <p class="text-xl md:text-2xl font-light mb-8">Empowering your software with flawless performance through expert SQA and manual testing.</p>
-            <a href="#skills" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-300">Explore My Skills</a>
+        <section id="hero" class="bg-gray-900 rounded-2xl shadow-xl overflow-hidden p-10 md:p-20 text-white flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-12">
+            
+            <div class="flex-shrink-0">
+                <img 
+                    src="Imnages\My_pic_white (1).png" 
+                    alt="Khan Muhammad Raza - SQA Engineer Profile Picture" 
+                    class="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover border-4 border-cyan-400 shadow-2xl"
+                >
+            </div>
+            
+            <div class="text-center md:text-left">
+                <h1 class="text-5xl md:text-6xl font-extrabold mb-4">Muhammad Raza Khan</h1>
+                <p class="text-xl md:text-2xl font-light mb-8">Empowering your software with flawless performance through expert SQA and manual testing.</p>
+                <a href="#skills" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-300">Explore My Skills</a>
+            </div>
+
         </section>
 
-        <!-- My Skills Section -->
         <section id="skills" class="mt-16">
             <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">My Skills</h2>
             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
-                <!-- Automation and general skills -->
-                <div class="flex items-center justify-center p-4 bg-gray-100 rounded-lg shadow-md">
-                    <span class="font-semibold text-gray-700">Selenium</span>
+                
+                <div class="flex flex-col items-center justify-center p-4 bg-gray-100 rounded-lg shadow-md transition-shadow hover:shadow-xl">
+                    <i class="fas fa-globe text-3xl text-red-600 mb-2"></i> 
+                    <span class="font-semibold text-gray-700 text-center">Selenium</span>
                 </div>
-                <div class="flex items-center justify-center p-4 bg-gray-100 rounded-lg shadow-md">
-                    <span class="font-semibold text-gray-700">JIRA</span>
+                <div class="flex flex-col items-center justify-center p-4 bg-gray-100 rounded-lg shadow-md transition-shadow hover:shadow-xl">
+                    <i class="fab fa-jira text-3xl text-blue-700 mb-2"></i>
+                    <span class="font-semibold text-gray-700 text-center">JIRA</span>
                 </div>
-                <div class="flex items-center justify-center p-4 bg-gray-100 rounded-lg shadow-md">
-                    <span class="font-semibold text-gray-700">Agile</span>
+                <div class="flex flex-col items-center justify-center p-4 bg-gray-100 rounded-lg shadow-md transition-shadow hover:shadow-xl">
+                    <i class="fas fa-people-arrows text-3xl text-green-600 mb-2"></i>
+                    <span class="font-semibold text-gray-700 text-center">Agile</span>
                 </div>
-                <div class="flex items-center justify-center p-4 bg-gray-100 rounded-lg shadow-md">
-                    <span class="font-semibold text-gray-700">Python</span>
+                <div class="flex flex-col items-center justify-center p-4 bg-gray-100 rounded-lg shadow-md transition-shadow hover:shadow-xl">
+                    <i class="fab fa-python text-3xl text-blue-500 mb-2"></i>
+                    <span class="font-semibold text-gray-700 text-center">Python</span>
                 </div>
-                <div class="flex items-center justify-center p-4 bg-gray-100 rounded-lg shadow-md">
-                    <span class="font-semibold text-gray-700">Postman (API Testing)</span>
+                <div class="flex flex-col items-center justify-center p-4 bg-gray-100 rounded-lg shadow-md transition-shadow hover:shadow-xl">
+                    <i class="fas fa-server text-3xl text-orange-500 mb-2"></i>
+                    <span class="font-semibold text-gray-700 text-center">Postman (API Testing)</span>
                 </div>
-                <!-- Manual testing skills -->
-                <div class="flex items-center justify-center p-4 bg-gray-100 rounded-lg shadow-md">
-                    <span class="font-semibold text-gray-700">Test Case Design</span>
+                
+                <div class="flex flex-col items-center justify-center p-4 bg-gray-100 rounded-lg shadow-md transition-shadow hover:shadow-xl">
+                    <i class="fas fa-clipboard-list text-3xl text-cyan-600 mb-2"></i>
+                    <span class="font-semibold text-gray-700 text-center">Test Case Design</span>
                 </div>
-                <div class="flex items-center justify-center p-4 bg-gray-100 rounded-lg shadow-md">
-                    <span class="font-semibold text-gray-700">Bug Reporting</span>
+                <div class="flex flex-col items-center justify-center p-4 bg-gray-100 rounded-lg shadow-md transition-shadow hover:shadow-xl">
+                    <i class="fas fa-bug text-3xl text-red-500 mb-2"></i>
+                    <span class="font-semibold text-gray-700 text-center">Bug Reporting</span>
                 </div>
-                <div class="flex items-center justify-center p-4 bg-gray-100 rounded-lg shadow-md">
-                    <span class="font-semibold text-gray-700">Functional Testing</span>
+                <div class="flex flex-col items-center justify-center p-4 bg-gray-100 rounded-lg shadow-md transition-shadow hover:shadow-xl">
+                    <i class="fas fa-vial text-3xl text-purple-600 mb-2"></i>
+                    <span class="font-semibold text-gray-700 text-center">Functional Testing</span>
                 </div>
-                <div class="flex items-center justify-center p-4 bg-gray-100 rounded-lg shadow-md">
-                    <span class="font-semibold text-gray-700">Regression Testing</span>
+                <div class="flex flex-col items-center justify-center p-4 bg-gray-100 rounded-lg shadow-md transition-shadow hover:shadow-xl">
+                    <i class="fas fa-redo-alt text-3xl text-gray-600 mb-2"></i>
+                    <span class="font-semibold text-gray-700 text-center">Regression Testing</span>
                 </div>
-                <div class="flex items-center justify-center p-4 bg-gray-100 rounded-lg shadow-md">
-                    <span class="font-semibold text-gray-700">Web/Mobile Testing</span>
+                <div class="flex flex-col items-center justify-center p-4 bg-gray-100 rounded-lg shadow-md transition-shadow hover:shadow-xl">
+                    <i class="fas fa-mobile-alt text-3xl text-teal-600 mb-2"></i>
+                    <span class="font-semibold text-gray-700 text-center">Web/Mobile Testing</span>
                 </div>
-                <div class="flex items-center justify-center p-4 bg-gray-100 rounded-lg shadow-md">
-                    <span class="font-semibold text-gray-700">Database Fundamentals (SQL)</span>
+                <div class="flex flex-col items-center justify-center p-4 bg-gray-100 rounded-lg shadow-md transition-shadow hover:shadow-xl">
+                    <i class="fas fa-database text-3xl text-yellow-600 mb-2"></i>
+                    <span class="font-semibold text-gray-700 text-center">Database Fundamentals (SQL)</span>
                 </div>
-                <div class="flex items-center justify-center p-4 bg-gray-100 rounded-lg shadow-md">
-                    <span class="font-semibold text-gray-700">SDLC & STLC</span>
+                <div class="flex flex-col items-center justify-center p-4 bg-gray-100 rounded-lg shadow-md transition-shadow hover:shadow-xl">
+                    <i class="fas fa-project-diagram text-3xl text-pink-600 mb-2"></i>
+                    <span class="font-semibold text-gray-700 text-center">SDLC & STLC</span>
                 </div>
-                <div class="flex items-center justify-center p-4 bg-gray-100 rounded-lg shadow-md">
-                    <span class="font-semibold text-gray-700">Test Automation Frameworks</span>
+                <div class="flex flex-col items-center justify-center p-4 bg-gray-100 rounded-lg shadow-md transition-shadow hover:shadow-xl">
+                    <i class="fas fa-cogs text-3xl text-indigo-600 mb-2"></i>
+                    <span class="font-semibold text-gray-700 text-center">Test Automation Frameworks</span>
                 </div>
-                <div class="flex items-center justify-center p-4 bg-gray-100 rounded-lg shadow-md">
-                    <span class="font-semibold text-gray-700">Performance Testing</span>
+                <div class="flex flex-col items-center justify-center p-4 bg-gray-100 rounded-lg shadow-md transition-shadow hover:shadow-xl">
+                    <i class="fas fa-tachometer-alt text-3xl text-orange-600 mb-2"></i>
+                    <span class="font-semibold text-gray-700 text-center">Performance Testing</span>
                 </div>
-                <div class="flex items-center justify-center p-4 bg-gray-100 rounded-lg shadow-md">
-                    <span class="font-semibold text-gray-700">Mobile Testing</span>
+                <div class="flex flex-col items-center justify-center p-4 bg-gray-100 rounded-lg shadow-md transition-shadow hover:shadow-xl">
+                    <i class="fas fa-tablet-alt text-3xl text-teal-600 mb-2"></i>
+                    <span class="font-semibold text-gray-700 text-center">Mobile Testing</span>
                 </div>
             </div>
         </section>
 
-        <!-- Projects Section -->
         <section id="projects" class="my-16">
             <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">My Projects</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-                <!-- Project Card 1: Sauce Demo Login Automation -->
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden p-8">
                     <h3 class="text-2xl font-semibold mb-2 text-gray-800">Login Functionality Test Automation: Sauce Demo Site</h3>
                     <p class="text-gray-600 mb-4">Developed an automated test suite to verify the login functionality of the Sauce Demo website. The tests cover both valid and invalid credentials to ensure robustness. This project demonstrates my ability to design and execute effective test cases, as well as my proficiency with automation tools.</p>
                     <a href="https://github.com/khanmuhammadraza6/WebPortfolio1/tree/main" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition-all duration-300">View on GitHub</a>
                 </div>
-                <!-- Project Card 2: POM Google Search -->
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden p-8">
                     <h3 class="text-2xl font-semibold mb-2 text-gray-800">Google Search Test Automation using Page Object Model (POM)</h3>
                     <p class="text-gray-600 mb-4">Implemented the Page Object Model (POM) design pattern to automate Google's search functionality. This project showcases my ability to create scalable and maintainable test frameworks by separating test logic from page locators, making the code reusable and easy to update.</p>
@@ -144,17 +158,14 @@
             </div>
         </section>
 
-        <!-- Insights Section -->
         <section id="insights" class="my-16">
             <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">My Latest Insights</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-                <!-- Blog Post Card 1 -->
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden p-8">
                     <h3 class="text-2xl font-semibold mb-2 text-gray-800">The Power of Page Object Model: A Guide to Clean Test Automation</h3>
                     <p class="text-gray-600 mb-4">Discover the crucial role of the Page Object Model (POM) in building scalable and maintainable automation frameworks. Learn how avoiding this design pattern can lead to challenges and how it can be your key to writing cleaner, more efficient test code.</p>
                     <a href="https://www.linkedin.com/feed/update/urn:li:activity:7363072373933117440/" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition-all duration-300">Read on LinkedIn</a>
                 </div>
-                <!-- Blog Post Card 2 -->
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden p-8">
                     <h3 class="text-2xl font-semibold mb-2 text-gray-800">Enhancing Test Automation with Listeners in Selenium</h3>
                     <p class="text-600 mb-4">Explore how Selenium listeners act as powerful event handlers, allowing you to monitor and customize test execution. Learn how they can be used for logging, taking screenshots on failure, and generating reports, making your test framework more robust and insightful.</p>
@@ -163,17 +174,26 @@
             </div>
         </section>
 
-        <!-- About Me Section -->
         <section id="about" class="my-16">
             <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">About My Journey</h2>
-            <div class="bg-gray-100 rounded-xl shadow-lg p-8 md:p-12">
-                <p class="text-gray-700 text-lg leading-relaxed">
-                    My journey into Quality Assurance was sparked by a natural curiosity and a passion for problem-solving. I am driven by the satisfying challenge of uncovering a product’s hidden issues, ensuring every user interaction is seamless and reliable. My portfolio is a testament to this commitment, showcasing my hands-on experience in building robust test automation frameworks and implementing best practices like the Page Object Model. I am a dedicated and meticulous professional, eager to apply my skills to real-world projects and contribute to a team focused on delivering flawless software. My ultimate goal is to land a role where I can continue to learn, grow, and help build exceptional products.
-                </p>
+            <div class="bg-gray-100 rounded-xl shadow-lg p-8 md:p-12 flex flex-col md:flex-row items-start md:space-x-10">
+                
+                <div class="flex-shrink-0 mb-6 md:mb-0 mx-auto md:mx-0">
+                     <img 
+                        src="Imnages\My_pic_white (1).png" 
+                        alt="Khan Muhammad Raza - Focused Profile" 
+                        class="w-32 h-32 rounded-lg object-cover shadow-lg transform rotate-3 hover:rotate-0 transition-transform duration-500"
+                    >
+                </div>
+                
+                <div>
+                    <p class="text-gray-700 text-lg leading-relaxed">
+                        My journey into Quality Assurance was sparked by a natural curiosity and a passion for problem-solving. I am driven by the satisfying challenge of uncovering a product’s hidden issues, ensuring every user interaction is seamless and reliable. My portfolio is a testament to this commitment, showcasing my hands-on experience in building robust test automation frameworks and implementing best practices like the Page Object Model. I am a dedicated and meticulous professional, eager to apply my skills to real-world projects and contribute to a team focused on delivering flawless software. My ultimate goal is to land a role where I can continue to learn, grow, and help build exceptional products.
+                    </p>
+                </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
         <section id="contact" class="my-16">
             <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Get In Touch</h2>
             <div class="bg-gray-100 rounded-xl shadow-lg p-8 md:p-12 text-center">
@@ -195,12 +215,10 @@
 
     </main>
 
-    <!-- Footer -->
     <footer class="bg-gray-800 text-white text-center p-6 mt-16">
-        <p>&copy; 2024 The Meticulous Tester. All rights reserved.</p>
+        <p>&copy; 2024 Muhammad Raza Khan. All rights reserved.</p>
     </footer>
 
-    <!-- All JavaScript is now included here for a single-file solution -->
     <script>
         // JavaScript for the mobile menu toggle
         const menuToggle = document.getElementById('menu-toggle');
